@@ -18,7 +18,7 @@ basicConfig(format="[%(asctime)s] [%(levelname)s] - %(message)s",
             handlers=[FileHandler('log.txt'), StreamHandler()],
             level=INFO)
 
-load_dotenv('config.env', override=True)
+load_dotenv('config.env', override=False)
 
 try:
     if bool(environ.get('_____REMOVE_THIS_LINE_____')):
