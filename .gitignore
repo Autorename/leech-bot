@@ -1,0 +1,19 @@
+# Never commit sensitive credentials
+*.session
+*.session-journal
+log.txt
+*.log
+__pycache__/
+*.pyc
+*.pyo
+.env
+accounts/
+tokens.pickle
+token.pickle
+credentials.json
+rclone.conf
+.netrc
+downloads/
+thumbnails/
+aria2.conf
+qBittorrent/
