@@ -31,7 +31,6 @@ psutil
 pybase64
 pycountry
 pymongo
-tgcrypto
 pyrotgfork
 pyrofork==2.2.11
 python-dotenv
