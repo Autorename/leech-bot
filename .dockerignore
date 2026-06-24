@@ -1,0 +1,11 @@
+.git
+.gitignore
+*.md
+__pycache__
+*.pyc
+*.pyo
+.env
+*.log
+rlog.txt
+log.txt
+.restartmsg

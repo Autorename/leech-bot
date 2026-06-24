@@ -5,7 +5,6 @@ aioshutil
 anytree==2.8.0
 apscheduler
 aria2p
-asyncio
 beautifulsoup4
 cinemagoer
 cloudscraper
@@ -31,7 +30,6 @@ psutil
 pybase64
 pycountry
 pymongo
-pyrotgfork
 pyrofork==2.2.11
 python-dotenv
 python-magic
