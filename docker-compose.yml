@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  bot:
+    build: .
+    image: leech-bot
+    container_name: leech-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./downloads:/usr/src/app/downloads
+      - ./logs:/usr/src/app/logs
+    ports:
+      - "80:80"
+      - "8080:8080"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
