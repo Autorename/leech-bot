@@ -168,8 +168,8 @@ if len(RCLONE_FLAGS) == 0:
     RCLONE_FLAGS = ''
 
 DEFAULT_UPLOAD = environ.get('DEFAULT_UPLOAD', '')
-if DEFAULT_UPLOAD != 'rc' and DEFAULT_UPLOAD != 'ddl':
-    DEFAULT_UPLOAD = 'gd'
+if DEFAULT_UPLOAD not in ['rc', 'ddl', 'tg']:
+    DEFAULT_UPLOAD = 'tg'
 
 DOWNLOAD_DIR = environ.get('DOWNLOAD_DIR', '')
 if len(DOWNLOAD_DIR) == 0:
