@@ -49,7 +49,7 @@ if DATABASE_URL is not None:
             and config_dict is not None:
         environ['UPSTREAM_REPO'] = config_dict['UPSTREAM_REPO']
         environ['UPSTREAM_BRANCH'] = config_dict['UPSTREAM_BRANCH']
-        environ['UPGRADE_PACKAGES'] = config_dict.get('UPDATE_PACKAGES', 'False')
+        environ['UPGRADE_PACKAGES'] = config_dict.get('UPGRADE_PACKAGES', 'False')
     conn.close()
 
 UPGRADE_PACKAGES = environ.get('UPGRADE_PACKAGES', 'False') 
